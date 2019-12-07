@@ -82,6 +82,11 @@ public class SetupTransBox extends JInternalFrame{
             public void actionPerformed(ActionEvent e) {
             	int t = Ttype.getSelectedIndex();
             	String target = (String)namebox.getSelectedItem();
+            	if(target == null) {
+            		JOptionPane.showMessageDialog(jf,"你没有可交易的对象!","无交易对象",JOptionPane.WARNING_MESSAGE
+                            );
+            		return;
+            	}
             	if(!MatchInteger.isInteger(balanceText.getText())) {
             		JOptionPane.showMessageDialog(jf,"请输入正确的交易金额!（非负整数）","交易金额错误",JOptionPane.WARNING_MESSAGE
                             );
