@@ -82,6 +82,4 @@ A financial transaction system using fisco-bcos blockchain
 
 ## 程序演示视频
 
-<video id="video" controls="" preload="none" poster="http://om2bks7xs.bkt.clouddn.com/2017-08-26-Markdown-Advance-Video.jpg">
-<source id="mp4" src="https://github.com/Yuhang-Follheart/blockchain-trading-system/blob/master/demo.mp4" type="video/mp4">
-</video>
+[演示视频](https://github.com/Yuhang-Follheart/blockchain-trading-system/blob/master/demo.mp4)
