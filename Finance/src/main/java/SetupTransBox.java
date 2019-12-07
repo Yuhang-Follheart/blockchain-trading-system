@@ -124,7 +124,7 @@ public class SetupTransBox extends JInternalFrame{
         showPanel.add(goTrans);
         showPanel.setLayout(null);
         this.add(showPanel);
-        this.setVisible(false);
+        this.setVisible(true);
         this.setPreferredSize(new Dimension(300, 250));
         // 设置窗口的显示位置
         //this.setLocation(150, 0);

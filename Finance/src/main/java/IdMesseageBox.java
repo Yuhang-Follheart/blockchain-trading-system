@@ -74,7 +74,7 @@ public class IdMesseageBox extends JPanel implements ShowComponent{
 		setTrans = new SetupTransBox(jf, this);
 		JPanel con = new JPanel();
 		con.setBounds(350, 30, 300, 260);
-		con.setVisible(false);
+		con.setVisible(true);
 		//con.setLayout(null);
 		con.add(setTrans);
 		this.add(con);
