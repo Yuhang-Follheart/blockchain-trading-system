@@ -81,3 +81,5 @@ A financial transaction system using fisco-bcos blockchain
    `bash get_account.sh`
 
 ## 程序演示视频
+
+<video src="https://github.com/Yuhang-Follheart/blockchain-trading-system/blob/master/demo.mkv" controls="controls" width="500" height="300">您的浏览器不支持播放该视频！</video>
