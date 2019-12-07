@@ -40,6 +40,7 @@ public class RegisterBox extends JPanel{
         
         JTextField nameText = new JTextField(15);
         nameText.setBounds(140,50,165,25);
+        nameText.setFont(new Font(null, Font.PLAIN, 20));
         this.add(nameText);
         
         JLabel balanceLabel = new JLabel("资产：");
@@ -49,6 +50,7 @@ public class RegisterBox extends JPanel{
         
         JTextField balanceText = new JTextField(15);
         balanceText.setBounds(140,95,165,25);
+        balanceText.setFont(new Font(null, Font.PLAIN, 20));
         this.add(balanceText);
 
         JLabel typeLabel = new JLabel("类型：");

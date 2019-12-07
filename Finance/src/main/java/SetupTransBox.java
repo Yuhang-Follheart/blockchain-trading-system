@@ -27,14 +27,14 @@ public class SetupTransBox extends JInternalFrame{
 	private String[] T = {"余额交易", "欠条交易", "应收账款交易", "贷款"};
 	private JPanel showPanel;
 	private JButton goTrans;
-	
+	private IdMesseageBox idm;
 	public void refresh() {
 		Vector<String> names = jf.getNames();
 		ComboBoxModel<String> model = new DefaultComboBoxModel<String>(names);
 		namebox.setModel(model);
 	}
 	
-	SetupTransBox(FGui f){
+	SetupTransBox(FGui f, IdMesseageBox idm){
 		super( "发起交易",  // title
                 true,       // resizable
                 true,       // closable
@@ -42,6 +42,7 @@ public class SetupTransBox extends JInternalFrame{
                 true        // iconifiable
               );
 		this.jf = f;
+		this.idm = idm;
 		showPanel = new JPanel();
 		receiver = new JLabel("交易对象:");
 		receiver.setFont(new Font(null, Font.PLAIN, 20));
@@ -117,7 +118,7 @@ public class SetupTransBox extends JInternalFrame{
 	            		}
 	            	}
             	}
-            	refresh();
+            	idm.refresh();
             }
         });
         showPanel.add(goTrans);

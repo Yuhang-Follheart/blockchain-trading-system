@@ -20,12 +20,14 @@ public class IdMesseageBox extends JPanel implements ShowComponent{
 	private JLabel balanceLabel;
 	private JLabel debetLabel;
 	private JLabel reLabel;
+	private SetupTransBox setTrans;
 	public void refresh() {
 		ArrayList<String> idm = jf.getIdMesseage();
 		nameLabel.setText(name + idm.get(0));
 		balanceLabel.setText(balance + idm.get(1));
 		debetLabel.setText(debet + idm.get(2));
 		reLabel.setText(re + idm.get(3));
+		setTrans.refresh();
 	}
 	
 	public void paintComponent (Graphics g)
@@ -69,7 +71,7 @@ public class IdMesseageBox extends JPanel implements ShowComponent{
 		transBtn.setBounds(50, 210, 100, 50);
 		transBtn.setFont(new Font(null, Font.CENTER_BASELINE, 15));
 		
-		SetupTransBox setTrans = new SetupTransBox(jf);
+		setTrans = new SetupTransBox(jf, this);
 		JPanel con = new JPanel();
 		con.setBounds(350, 30, 300, 260);
 		con.setVisible(false);

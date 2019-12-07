@@ -8,6 +8,7 @@ import javax.swing.event.ChangeListener;
 public class TabbedBox extends JTabbedPane{
 	private static final long serialVersionUID = 1L;
 	private FGui jf;
+	public IdMesseageBox idm;
 	TabbedBox(FGui f){
 		this.jf = f;
 		this.setFont(new Font(null, Font.ROMAN_BASELINE, 20));

@@ -8,6 +8,7 @@
 plugins {
     // Apply the java-library plugin to add support for Java Library
     id 'java-library'
+    id 'application'
 }
 
 [compileJava, compileTestJava, javadoc]*.options*.encoding = 'UTF-8'
@@ -23,6 +24,8 @@ repositories {
 List logger = [
 	'org.slf4j:slf4j-log4j12:1.7.25'
 ]
+
+mainClassName = 'FGui'
 
 dependencies {
     // This dependency is exported to consumers, that is to say found on their compile classpath.

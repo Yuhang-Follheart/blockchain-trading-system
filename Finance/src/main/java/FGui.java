@@ -42,6 +42,7 @@ public class FGui extends JFrame{
 	private static BigInteger gasLimit = new BigInteger("30000000");
 	private String contractAddr;
 	public String name = "";
+	private TabbedBox tbox;
 	public ImageIcon icon= new ImageIcon("src/main/resources/background.jpg");
 	FGui(){
 		super("区块链金融系统");
@@ -93,7 +94,7 @@ public class FGui extends JFrame{
 	}
 	
 	private void showMainBox() {
-		TabbedBox tbox = new TabbedBox(this);
+		tbox = new TabbedBox(this);
 		this.setContentPane(tbox);
 		this.pack();
 	}
@@ -131,6 +132,12 @@ public class FGui extends JFrame{
 		String contractAddress = prop.getProperty("address");
 		if (contractAddress == null || contractAddress.trim().equals("")) {
 			contractAddress = deployFinance();
+		}
+		try {
+			Finance finance = Finance.load(contractAddress, web3j, credentials, new StaticGasProvider(gasPrice, gasLimit));
+		}
+		catch(Exception e) {
+			return deployFinance();
 		}
 		return contractAddress;
 	}
