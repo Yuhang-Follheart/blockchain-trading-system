@@ -6,13 +6,15 @@ A financial transaction system using fisco-bcos blockchain
 
 ## 环境要求
 
-1. **OpenJDK** 1.8以上版本
+1. 建议使用**Ubuntu 18.04** 版本系统
 
-   不能用甲骨文官网的java,否则会连不上节点
+2. **OpenJDK** 1.8以上版本
 
-2. **Gradle 建议使用6.0.1版本**
+   不能用甲骨文官网的JDK,否则会连不上节点
 
-3. **fisco-bcos**
+3. **Gradle 建议使用6.0.1版本**
+
+4. **fisco-bcos**
 
    下附安装教程
 
