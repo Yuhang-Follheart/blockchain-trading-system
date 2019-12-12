@@ -52,11 +52,7 @@ A financial transaction system using fisco-bcos blockchain
 
    `cp ca.crt sdk.crt sdk.key ~/blockchain-trading-system/Finance/src/main/resources`
 
-3. 复制资源包到Gradle目录
-
-   `cp -r ~/blockchain-trading-system/Dependencies/modules-2 ~/.gradle/caches/` 
-
-4. 你可以使用你的IDE加载Finance文件夹作为project, 然后运行FGui.java, 也可以参照下面教程在终端执行
+3. 你可以使用你的IDE加载Finance文件夹作为project, 然后运行FGui.java, 也可以参照下面教程在终端执行
 
 ### 终端执行程序
 
