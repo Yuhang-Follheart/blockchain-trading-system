@@ -61,6 +61,12 @@ A financial transaction system using fisco-bcos blockchain
    `cd ~/blockchain-trading-system/Finance`
 
    `gradle build`
+   
+   如果你在这个步骤不能正常地下载依赖包，建议换个网络(比如手机热点，或者挂着梯子的网络)后重试。
+   
+   实在不行也可以尝试使用我提供的依赖包，使用以下命令：
+   
+   `cp -r ~/blockchain-trading-system/Dependencies/modules-2 ~/.gradle/caches/` 
 
 2. 执行程序
 
