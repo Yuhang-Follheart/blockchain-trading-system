@@ -4,6 +4,18 @@ A financial transaction system using fisco-bcos blockchain
 
 ---
 
+## 项目结构
+
+```
+blockchain-trading-system
+    ├─demo.mp4     演示视频
+    ├─Dependencies 依赖包资源
+    ├─Finance      java Project文件夹
+    └─Solidity
+          └─Finance.sol   合约代码
+```
+---
+
 ## 环境要求
 
 1. 建议使用**Ubuntu 18.04** 版本系统
